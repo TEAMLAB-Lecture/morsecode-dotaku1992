@@ -288,8 +288,8 @@ def encoding_sentence(english_sentence):
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당 또는 필요에 따라 자유로운 수정
     EngToMorse = get_morse_code_dict()
-    EngToMorse[" "]=""
-    result = " ".join(EngToMorse[i] for i in get_cleaned_english_sentence(english_sentence).upper() )
+   
+    result = " ".join(EngToMorse[i] for i in get_cleaned_english_sentence(english_sentence).upper().split() )
 
     return result
     # ==================================

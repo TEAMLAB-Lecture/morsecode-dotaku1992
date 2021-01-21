@@ -202,7 +202,7 @@ def decoding_character(morse_character):
     for k,v in morse_code_dict.items():
         morseToalphabet[v]=k
 
-    result = morseToalphabet(morse_character)
+    result = morseToalphabet[morse_character]
     return result 
     # ==================================
 
